@@ -2,16 +2,10 @@
 import { Field, Form } from 'formik';
 import React from 'react';
 
-export const SignUp = () => (
+export const Login = () => (
   <div>
-    <h3 className="Main">Sign Up</h3>
+    <h3 className="Main">Login</h3>
     <Form>
-      <div className="Form">
-        <Field id="firstName" name="firstName" placeholder="Jane" />
-      </div>
-      <div className="Form">
-        <Field id="lastName" name="lastName" placeholder="Doe" />
-      </div>
 
       <div className="Form">
         <Field
@@ -21,6 +15,7 @@ export const SignUp = () => (
           type="email"
         />
       </div>
+
       <div className="Form">
         <Field
           id="password"

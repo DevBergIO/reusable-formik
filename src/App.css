@@ -1,7 +1,36 @@
 .App {
   display: grid;
 }
-
-
+.Column{
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+}
+.Main {
+  display: grid;
+  place-items: center;
+  margin-top: 2rem;
+}
+.Form {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+.Form > input {
+  padding: 1rem;
+  border-radius: 5px;
+  border-color: darkgrey;
+}.Form > button {
+   background-color: coral;
+   width: 4rem;
+   height: 2rem;
+   color: #fff;
+   border-radius: 8px;
+  border: none
+}
+.Form > input::placeholder {
+  display: grid;
+  place-items: center;
+}
 
 
