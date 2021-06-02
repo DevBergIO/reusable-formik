@@ -1,19 +1,17 @@
-import React, {useCallback} from 'react'
-import {FormContainer} from "../Form.container";
-import {SignIn} from "./SignIn";
+import React, { useCallback } from 'react';
+import { FormContainer } from '../Form.container';
+import { Login } from './Login';
 
-
-export const SignInContainer = () => {
-    const initialValues = {}
-    const handleSubmit = useCallback((formData) => {
-        console.log(formData);
-
-    }, [])
-    return (
-        <FormContainer
-            initialValues={initialValues}
-            onSubmit={handleSubmit}
-            component={SignIn}
-        />
-    )
-}
+export const LoginContainer = () => {
+  const initialValues = {};
+  const handleSubmit = useCallback((formData) => {
+    console.log(formData);
+  }, []);
+  return (
+    <FormContainer
+      initialValues={initialValues}
+      onSubmit={handleSubmit}
+      component={Login}
+    />
+  );
+};
