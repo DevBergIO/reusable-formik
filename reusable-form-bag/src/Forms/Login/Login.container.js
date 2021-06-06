@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react';
-import { FormContainer } from '../Form.container';
+import FormContainer from '../Form.container';
 import { Login } from './Login';
 
 export const LoginContainer = () => {

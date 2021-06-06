@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react';
-import { FormContainer } from '../Form.container';
+import FormContainer from '../Form.container';
 import { SignUp } from './SignUp';
 
 export const SignUpContainer = () => {
@@ -14,4 +14,8 @@ export const SignUpContainer = () => {
       component={SignUp}
     />
   );
+};
+
+SignUpContainer.propTypes = {
+
 };
